@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="fr">
+	<head >
+		<meta charset="UTF-8">
+		<meta name="keywords" content="&lt;table&gt;,&lt;caption&gt;,&lt;colgroup&gt;,&lt;thead&gt;,&lt;tfoot&gt;,&lt;tbody&gt;,&lt;tr&gt;,&lt;td&gt;,&lt;th&gt;">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Les tableaux</title>
+	</head >
+	<body>
+			<header>
+		<nav>
+			<ul>
+				<li><a href="#HTML">HTML 5</a> 
+					<ul>
+						<li> <a href="IntroductionHTML.html">C'est quoi le langage HTML ?</a> </li>
+						<li> <a href="BasesHTML.html">Les bases du langage HTML 5</a> </li>
+						<li> <a href="LesAttributsGlobeaux.html">Les attributs</a></button> </li>
+						<li> <a href="LesListes.html">Les listes</a> </li>
+						<li> <a href="LesTableaux.html">Les tableaux</a> </li>
+					</ul>
+				</li>
+				<li> <a href="#CSS">CSS</a> 
+					<ul>
+						<li> <a href="IntroductionCss.html">C'est quoi le CSS ?</a> </li>
+						<li> <a href="SelecteursCss.html">Les bases du langage HTML 5</a> </li>
+					</ul>
+				</li>
+				
+				<li> <a href="#Quiz">Quiz</a> 
+					<ul>
+					<li> <a href="QuizHTML.html">Quiz HTML 5</a> </li>
+					<li> <a href="QuizCss.html">Quiz Css</a> </li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+		<section>
+			<header><h2>Comment créer un tableau en HTML5 ? </h2><header>
+			<p>Un élément &lt;table&gt; est destiné à contenir un ensemble d’informations qui peuvent ou qui doivent être présentées dans une structure formatée en colonnes et en lignes.</p>
+			<p>Chaque élément &lt;tr&gt; représente une ligne de la table, qui contient elle-même un ou plusieurs &lt;td&gt; ou &lt;th&gt;.</p>
+			<p>Différents éléments enfants peuvent apporter une valeur sémantique au contenu : en-tête et titre de tableau, intitulés de colonnes ou de lignes, etc.</p>
+			<table>
+				<caption>Éléments d’un tableau</caption>
+				<tbody>
+					<tr> 
+						<th colspan="1" rowspan="1">L'élément</th>
+						<th colspan="1" rowspan="1">Occurrences</th>
+						<th colspan="3" rowspan="1">Rôle</th>
+					</tr>
+					<tr> 
+						<th colspan="1" rowspan="1">&lt;caption&gt;</th>
+						<th colspan="1" rowspan="1">0 ou 1</th>
+						<td colspan="3" rowspan="1">Attribue une légende à un tableau. Il doit être inséré immédiatement après la balise ouvrante &lt;table&gt;.</td>
+					</tr>
+					<tr> 
+						<th colspan="1" rowspan="1">&lt;colgroup&gt;</th>
+						<th colspan="1" rowspan="1">0 ou +</th>
+						<td colspan="3" rowspan="1">Placé en début de &lt;table&gt; est utilisé pour spécifier des propriétés communes à un groupe de colonnes dont le nombre est indiqué par l’attribut span. Il doit être placé avant tout usage de &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, et &lt;tr&gt;.</td>
+					</tr>
+					<tr> 
+						<th colspan="1" rowspan="1">&lt;thead&gt;</th>
+						<th colspan="1" rowspan="1">0 ou 1</th>
+						<td colspan="3" rowspan="1">Représente un en-tête de tableau, utilisé en conjonction avec &lt;tbody&gt; et &lt;tfoot&gt;. Il doit être placé avant &lt;tbody&gt; ou &lt;tfoot&gt;.</td>
+					</tr>
+					<tr> 
+						<th colspan="1" rowspan="1">&lt;tfoot&gt;</th>
+						<th colspan="1" rowspan="1">0 ou 1</th>
+						<td colspan="3" rowspan="1">Représente un pied de tableau. Il doit apparaître avant &lt;tbody&gt; dans le code .</td>
+					</tr>
+					<tr> 
+						<th colspan="1" rowspan="1">&lt;tbody&gt;</th>
+						<th colspan="1" rowspan="1">0 ou +</th>
+						<td colspan="3" rowspan="1">Représente un corps de tableau. Il regroupe les lignes &lt;tr&gt;.</td>
+					</tr>
+					<tr> 
+						<th colspan="1" rowspan="1">&lt;tr&gt;</th>
+						<th colspan="1" rowspan="1">1 ou +</th>
+						<td colspan="3" rowspan="1">Pour le corp du tableau , elle contient &lt;th&gt; , &lt;td&gt; .</td>
+					</tr>
+					<tr> 
+						<th colspan="1" rowspan="1">&lt;td&gt;</th>
+						<th colspan="1" rowspan="1">1 ou +</th>
+						<td colspan="3" rowspan="1">Peut contenir du texte et beaucoup d’autres éléments HTML tels que des liens, des images, des listes, etc. Elle est toujours imbriquée dans un élément &lt;tr&gt;.</td>
+					</tr>
+					<tr> 
+						<th colspan="1" rowspan="1">&lt;th&gt;</th>
+						<th colspan="1" rowspan="1">1 ou +</th>
+						<td colspan="3" rowspan="1">C'est une cellule spécialisée qui joue le rôle d’en-tête de colonne (ou de ligne) dans un tableau. Il doit être imbriqué dans une balise &lt;tr&gt;.</td>
+					</tr>
+				</tbody>
+					
+			</table>
+			<footer>
+				<button><a href="LesListes.html">Précédent</a></button> 
+				<button><a href="QUIZLesTableaux.html">QUIZ</a></button>
+				<button><a href="QuizHTML.html">Suivant</a></button> 
+			</footer>
+		</section>
+		
+		<footer>
+			<p>&copy;Copyright 2018 - 2019 ROUABHA.SAHNOUNE.Master1.IL</p>
+		</footer>
+	</body>
+</html>

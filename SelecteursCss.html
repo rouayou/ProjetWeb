@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang = "fr">
+	<head >
+		<meta charset="UTF-8">
+		<meta name="keywords" content="&lt;table&gt;,&lt;caption&gt;,&lt;colgroup&gt;,&lt;thead&gt;,&lt;tfoot&gt;,&lt;tbody&gt;,&lt;tr&gt;,&lt;td&gt;,&lt;th&gt;">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Selecteurs Css</title>
+	</head >
+	<body>
+		<header>
+		<nav>
+			<ul>
+				<li><a href="#HTML">HTML 5</a> 
+					<ul>
+						<li> <a href="IntroductionHTML.html">C'est quoi le langage HTML ?</a> </li>
+						<li> <a href="BasesHTML.html">Les bases du langage HTML 5</a> </li>
+						<li> <a href="LesAttributsGlobeaux.html">Les attributs</a></button> </li>
+						<li> <a href="LesListes.html">Les listes</a> </li>
+						<li> <a href="LesTableaux.html">Les tableaux</a> </li>
+					</ul>
+				</li>
+				<li> <a href="#CSS">CSS</a> 
+					<ul>
+						<li> <a href="IntroductionCss.html">C'est quoi le CSS ?</a> </li>
+						<li> <a href="SelecteursCss.html">Les bases du langage HTML 5</a> </li>
+					</ul>
+				</li>
+				
+				<li> <a href="#Quiz">Quiz</a> 
+					<ul>
+					<li> <a href="QuizHTML.html">Quiz HTML 5</a> </li>
+					<li> <a href="QuizCss.html">Quiz Css</a> </li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+		<section>
+			<header><h2>Selecteurs Css</h2></header>
+				<p>Une des grandes richesses de CSS est la multiplicité des possibilités de sélection des éléments auxquels on veut attribuer un style donné.</p>
+				<p>Cette très grande diversité permet d’appliquer un style aussi facilement à tous les éléments, qu’à un unique élément isolé dans la page web, sans avoir à écrire la définition localement.</p>
+				<p>De plus, la combinaison de plusieurs sélecteurs dans la même déclaration permet de répondre à tous les besoins, même les plus complexes.</p>
+				<p></p>
+				<ol>
+					<li><h3>Selecteurs à un seul élément</h3>
+						<p>Le sélecteur est constitué du nom de l’élément sans les caractères de début &lt; et de fin de balise /&lt;.</p>
+						<p>Exemple :</p>
+						 <code>p {color : yellow;}</code>
+						<p>Nous pouvons appliquer le même style à plusieurs éléments différents en les énumérant et en les séparant par une virgule dans le sélecteur.</p>
+						<p>Exemple : </p>
+						<code>h1,div,p {color : black ; background-color : red;}</code>
+					</li>
+					<li><h3>Le sélecteur universel</h3>
+						<p>Pour appliquer un style à tous les éléments, nous utiliserons le sélecteur universel *.</p>
+						<p>Exemple : </p>
+						<code>*{background-color: yellow;}</code>
+						<p>On peut modifier cette propriété pour un élément particulier, en la redéfinissant uniquement pour celui-ci, par exemple :</p>
+						<code>*{background-color: yellow;}</code>
+						<code>p{background-color: gray;}</code>
+					</li>
+					<li><h3>Sélecteurs d‘identifiant (ID)</h3>
+						<p>Chaque élément peut avoir un attribut id qui doit être uniquedans une page donnée.</p>
+						<p>Nous pouvons écrire un style qui ne sera applicable qu’à l’élément dont l’id a une valeur précise en donnant cette valeur au sélecteur (comme pour une classe) et en le faisant précéder du caractère (#).</p>
+						<p>Exemple : </p>
+						<code>#bleu {color: white; background-color: blue;}</code>
+					</li>
+					<li><h3>Sélecteur par contexte</h3>
+						<p>Permet d’appliquer un style en fonction de la position relative de l’élément par rapport à un autre dans la hiérarchie des éléments de la page. Ce type de sélecteur est dit contextuel.</p>
+						<p>Syntaxe: </p>
+						<code>element_parent element_enfant{ propriété1 : valeur1 ; propriété2 : valeur2 ;...; propriétéN : valeurN }</code>
+					</li>
+					<li><h3>Les sélecteurs parent-enfant directs</h3>
+						<p>Nous pourrons préciser le sélecteur précédent en n’appliquant qu’un style à un élément à condition qu’il soit un enfant direct d’un autre élément et non plus un descendant indirect.</p>
+						<p>Syntaxe : </p>
+						<code>element_parent > element_enfant{ propriété1 : valeur1 ; propriété2 : valeur2 ;...; propriétéN : valeurN }</code>
+					</li>
+					<li><h3>Les sélecteurs d’éléments adjacents ou frères</h3>
+						<p>Les éléments adjacents ou frères sont des éléments d'un seul père.</p>
+						<ul>
+						<li>
+							<p>Pour sélectionner la relation entre deux éléments frères, nous disposons du sélecteur ~ :</p>
+							<code>élément1~élément2 { propriété1 : valeur1 ; propriété2 : valeur2 ;...; propriétéN : valeurN }</code>
+						</li>
+						<li>
+							<p>Pour sélectionner la relation entre deux éléments frères consécutifs, nous disposons du sélecteur + :</p>
+							<code>élément1+élément2 { propriété1 : valeur1 ; propriété2 : valeur2 ;...; propriétéN : valeurN }</code>
+						</li>
+						</ul>
+					</li>
+					<li><h3>Le sélecteur :not</h3>
+						<p>Lesélecteur: not correspond à chaque élément qui n'est pas l'élément spécifié par cet sélecteur.</p>
+						<p>Syntaxe : </p>
+						<code>:not(élément){ propriété1 : valeur1 ; propriété2 : valeur2 ;...; propriétéN : valeurN }</code>
+					</li>
+					<li><h3>Sélecteur d’attribut</h3>
+						<p>On peut définir un sélecteur d’attribut sans en préciser la valeur.</p>
+						<p>Exemple : </p><code>*[title] {background–color: yellow;}</code>
+						<p>Il est possible de sélectionner plusieurs attributs pour un élément en faisant suivre son nom de plusieurs attributs entre crochets.</p>
+						<p>Exemple : </p><code>h2[title][id]{background-color: yellow;}</code>
+					</li>
+					<li><h3>Sélecteur de valeur d’attribut</h3>
+						<p>C’est une méthode qui sélectionne les balises ayant un attribut avec une valeur donnée.</p>
+						<p>Exemple : </p><code>input[type="button"] { background-color: yellow; }</code>
+						<p>Il est possible de sélectionner plusieurs attributs et leurs valeurs en utilisant la syntaxe :</p>
+						<code>élément[attribut1="valeur1"][attribut2="valeur2"] {propriété1 : valeur1 ; propriété2 : valeur2 ;...; propriétéN : valeurN}</code>
+					</li>
+				</ol>
+				<footer>
+					<button><a href="IntroductionCss.html">Précédent</a></button> 
+					<button><a href="QUIZSelecteursCss.html">QUIZ</a></button> 
+					<button><a href="QuizCss.html">Suivant</a></button> 
+				</footer>
+		</section>
+		<footer>
+			<p>&copy;Copyright 2018 - 2019 ROUABHA.SAHNOUNE.Master1.IL</p>
+		</footer>	
+	</body>
+	</html>

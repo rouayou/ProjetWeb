@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="fr">
+	<head >
+		<meta charset="UTF-8">
+		<meta name="keywords" content="&lt;table&gt;,&lt;caption&gt;,&lt;colgroup&gt;,&lt;thead&gt;,&lt;tfoot&gt;,&lt;tbody&gt;,&lt;tr&gt;,&lt;td&gt;,&lt;th&gt;">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Introduction au Css</title>
+	</head >
+	<body>
+			<header>
+		<nav>
+			<ul>
+				<li><a href="#HTML">HTML 5</a> 
+					<ul>
+						<li> <a href="IntroductionHTML.html">C'est quoi le langage HTML ?</a> </li>
+						<li> <a href="BasesHTML.html">Les bases du langage HTML 5</a> </li>
+						<li> <a href="LesAttributsGlobeaux.html">Les attributs</a></button> </li>
+						<li> <a href="LesListes.html">Les listes</a> </li>
+						<li> <a href="LesTableaux.html">Les tableaux</a> </li>
+					</ul>
+				</li>
+				<li> <a href="#CSS">CSS</a> 
+					<ul>
+						<li> <a href="IntroductionCss.html">C'est quoi le CSS ?</a> </li>
+						<li> <a href="SelecteursCss.html">Les bases du langage HTML 5</a> </li>
+					</ul>
+				</li>
+				
+				<li> <a href="#Quiz">Quiz</a> 
+					<ul>
+					<li> <a href="QuizHTML.html">Quiz HTML 5</a> </li>
+					<li> <a href="QuizCss.html">Quiz Css</a> </li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+		<section>
+		<header><h2>Introduction au Css</h2></header>
+		<ul>
+			<li><h3>Qu'est ce que c'est le CSS ?</h3>
+					<p>Les feuilles de styles (en anglais "Cascading Style Sheets", abrégé CSS) sont un langage qui permet de gérer la présentation d'une page Web. Le langage CSS est une recommandation du World Wide Web Consortium (W3C), au même titre que HTML ou XML.</p>
+					<p>Les styles permettent de définir des règles appliquées à un ou plusieurs documents HTML. Ces règles portent sur le positionnement des éléments, l'alignement, les polices de caractères, les couleurs, les marges et espacements, les bordures, les images de fond, etc.</p>
+					<p>Le but de CSS est séparer la structure d'un document HTML et sa présentation. En effet, avec HTML, on peut définir à la fois la structure (le contenu et la hiérarchie entre les différentes parties d'un document) et la présentation. Mais cela pose quelques problèmes. Avec le couple HTML/CSS, on peut créer des pages web où la structure du document se trouve dans le fichier HTML tandis que la présentation se situe dans un fichier CSS.</p>
+					<p>Avec CSS on peut par exemple définir un ensemble de règles stylistiques communes à toutes les pages d'un site internet. Cela facilite ainsi la modification de la présentation d'un site entier. CSS permet aussi de définir des règles différentes pour chaque support d'affichage (une navigateur classique, une télévision, un support mobile, un lecteur braille...). CSS permet aussi d'améliorer l'accessibilité des documents web.</p>
+					<p>De plus, CSS ajoute des fonctionnalités nouvelles par rapport à HTML au point de vue du style. En effet, HTML permet une gestion assez sommaire du style des documents.</p>
+			</li>
+		
+			<li><h3>Comment appliquer un style ?</h3>
+				<p>L'application d'un style CSS peut se faire en trois manières : </p>
+					<ol>
+						<li><p>Utilisation d'une feuille de style interne ( Valable pour un seul document HTML).</p>
+							<p>Syntaxe :</p>
+							<code>
+								&lt;html&gt;
+									&lt;head&gt;
+										&lt;style type="text/css"&gt; (……ma feuille de style…..) &lt;/style&gt;
+									&lt;/head&gt;
+									&lt;body&gt; (...) &lt;/body&gt;
+									&lt;/html&gt;
+							</code>
+						</li>
+						<li><p>Utilisation d'une feuille de style externe ( Valable pour pour plusieurs documents HTML ). Dans ce cas la définition du style se faire dans fichier externe. L'appel de ce fichier se faire à l'aide de la balise &lt;link&gt; ( au niveau de la balise &lt;head&gt; dans le fichier HTML )<p>
+							<p>Syntaxe :</p>
+							<code>
+								&lt;html&gt;
+									&lt;head&gt;
+										&lt;link rel="stylesheet" type="text/css“ href="styles.css"&gt;
+									&lt;/head&gt;
+									&lt;body&gt; (...) &lt;/body&gt;
+									&lt;/html&gt;
+							</code>
+						</li>
+						<li><p>Les styles communs peuvent être écrits dans un fichier externe et inclus dans l’élément &lt;style&gt; au moyen de la directive @import...</p>
+							<p>Syntaxe :</p>
+							<code>@import url(fichier.css);</code>
+							<p>Cette directive doit figurer avant les autres définitions de style, et elle peut être suivie de la désignation du média auquel les styles importés doivent s’appliquer spécifiquement.</p>
+						</li>
+					</ol>
+				</li>
+		
+			<li><h3>Structure générale</h3>
+					<p>Une feuille de style est une suite de règles, et chaque règle se compose d'un ( ou plusieurs ) sélecteur(s) indique l'élément concerné par le style et une déclaration qui est une suite de paires "propriété : valeur" séparées par «;».</p>
+					<p>Syntaxe :</p>
+					<code>selecteur1 , selecteur2,..., selecteurN { propriété1 : valeur1 ; propriété2 : valeur2 ;...; propriétéN : valeurN } </code>
+			</li>
+		</ul>
+		<aside>
+			<p>Pour plus d'informations vous pouvez consulter : 
+			<a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3">OpenClassrooms</a> , 
+			<a href="https://www.w3schools.com/css/">W3schools</a> 
+			</p>
+		</aside>
+		<footer>
+			<button><a href="LesTableaux.html.html">Précédent</a></button>
+			<button><a href="QUIZIntroductionCss.html">QUIZ</a></button>
+			<button><a href="SelecteursCss.html">Suivant</a></button> 
+		</footer>		
+	</section>
+		
+		<footer>
+			<p>&copy;Copyright 2018 - 2019 ROUABHA.SAHNOUNE.Master1.IL</p>
+		</footer>
+	</body>
+	</html>

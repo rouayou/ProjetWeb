@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Les bases du langage HTML 5</title>
+</head>
+<body>
+		<header>
+		<nav>
+			<ul>
+				<li><a href="#HTML">HTML 5</a> 
+					<ul>
+						<li> <a href="IntroductionHTML.html">C'est quoi le langage HTML ?</a> </li>
+						<li> <a href="BasesHTML.html">Les bases du langage HTML 5</a> </li>
+						<li> <a href="LesAttributsGlobeaux.html">Les attributs</a></button> </li>
+						<li> <a href="LesListes.html">Les listes</a> </li>
+						<li> <a href="LesTableaux.html">Les tableaux</a> </li>
+					</ul>
+				</li>
+				<li> <a href="#CSS">CSS</a> 
+					<ul>
+						<li> <a href="IntroductionCss.html">C'est quoi le CSS ?</a> </li>
+						<li> <a href="SelecteursCss.html">Les bases du langage HTML 5</a> </li>
+					</ul>
+				</li>
+				
+				<li> <a href="#Quiz">Quiz</a> 
+					<ul>
+					<li> <a href="QuizHTML.html">Quiz HTML 5</a> </li>
+					<li> <a href="QuizCss.html">Quiz Css</a> </li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<header><h1>Les bases du langage HTML 5 :</h1></header>
+		<ul>
+			<li><h3>Les balises et leurs attributs</h3>
+				<p>Les pages HTML sont remplies de ce qu'on appelle des balises. Celles-ci sont invisibles à l'écran pour vos visiteurs, mais elles permettent à l'ordinateur de comprendre ce qu'il doit afficher.</p>
+				<p>Les balises se repèrent facilement. Elles sont entourées de « chevrons », comme ceci : &lt;balise&gt; contenu de la balise &lt;/balise&gt;.<p>
+				<p>Tout ce qui est en dehors des symboles &lt; et &gt; est du texte qui sera affiché sur la page Web.</p>
+			</li>
+			
+			<li><h3>Règles de base de HTML 5 :</h3>
+				<p>Un document HTML doit respecter certaines règles simples:</p>
+				<ol>
+					<li>Les éléments ne doivent pas se chevaucher et donc obéir au principe premier ouvert, dernier fermé.</li>
+					<li>Les éléments et les attributs sont insensibles à la casse. Il est cependant préférable de tout mettre en minuscules.</li>
+					<li>Les éléments non vides doivent avoir une balise d’ouverture et une balise de fermeture.</li>
+					<li>Les éléments vides ne comportent qu’une seule balise.</li>
+					<li>Tous les attributs doivent avoir une valeur incluse entre guillemets (" ").</li>
+					<li>Les différents attributs du même élément doivent être séparés par au moins un espace.</li>
+					<li>Une valeur doit être donnée à tous les attributs utilisés, y compris à ceux dont la valeur est unique.</li>
+				</ol>
+			</li>
+			
+			<li><h3>Minimum d'une page HTML 5 :</h3>
+				<code>
+				&lt;!DOCTYPE html&gt;
+					&lt;html&gt;
+						&lt;head&gt;
+							&lt;!--Entête de la page--&gt; 
+						&lt;/head&gt;
+						&lt;body&gt; 
+							&lt;!--Contenu de la page--&gt; 
+						&lt;/body&gt;
+					&lt;/html&gt;
+				</code>
+				<dl>
+					<dd>&lt;!DOCTYPE html&gt; : </dd><dt>La déclaration DOCTYPE précise le type de document qui va être créé.</dt><br>
+					<dd>&lt;html&gt; : </dd><dt>C'est l’élément racine du document HTML.</dt><br>
+					<dd>&lt;head&gt; : </dd><dt>Indique l’en-tête du document. </dt><br>
+					<dd>&lt;body&gt; : </dd><dt>Indique le corps du document. </dt><br>
+				</dl>
+			</li>
+			
+			<li><h3>Les éléments de la balise &lt;head&gt; :</h3>
+				<p>L’élément &lt;head&gt; permet une description de la page et englobe un certain nombre d’informations dites métadonnées contenues dans six éléments différents: &lt;base/&gt;, &lt;link/&gt;, &lt;meta/&gt;, &lt;script&gt;, &lt;style&gt; et &lt;title&gt; . </p>
+				<p>Son contenu  n'est pas affiché par le navigateur ( Sauf l'élément title ).</p>
+				<table>
+						<caption>Tableau 1 : Les éléments de la balise &lt;head&gt;</caption>
+						<tbody>
+							<tr> 
+								<th colspan="1" rowspan="1">La balise</th>
+								<th colspan="3" rowspan="1">Utilisation</th>								
+							</tr>
+							<tr> 
+								<th colspan="1" rowspan="1">&lt;base/&gt;</th>
+								<td colspan="3" rowspan="1">Base d’adresses par défaut et de cible pour tous les liens du document</td>
+							</tr>
+							<tr> 
+								<th colspan="1" rowspan="1">&lt;link/&gt;</th>
+								<td colspan="3" rowspan="1">Relations vers des ressources externes</td>
+							</tr>
+							<tr> 
+								<th colspan="1" rowspan="1">&lt;meta/&gt;</th>
+								<td colspan="3" rowspan="1">Méta-informations ( auteur, description, encodage des caractères...etc ).</td>
+							</tr>
+							<tr> 
+								<th colspan="1" rowspan="1">&lt;script&gt;</th>
+								<td colspan="3" rowspan="1">Scripts embarqués dans le document</td>
+							</tr>
+							<tr> 
+								<th colspan="1" rowspan="1">&lt;style&gt;</th>
+								<td colspan="3" rowspan="1">Styles CSS embarqués dans le document</td>
+							</tr>
+							<tr> 
+								<th colspan="1" rowspan="1">&lt;title&gt;</th>
+								<td colspan="3" rowspan="1">Titre du document</td>
+							</tr>
+						</tbody>	
+					</table>
+			</li>
+			<li><h3>Les éléments de la balise &lt;body&gt; :</h3>
+				<p>L’élément &lt;body&gt; est le conteneur de l’ensemble des éléments textuels et graphiques d’une page web. Dans leur quasi-totalité, les éléments disponibles en HTML ont en commun un ensemble d’attributs ayant chacun le même rôle. Ces attributs se répartissent en deux catégories:</p>
+				<dl>
+					<dd>Les attributs globaux (ou noyau): </dd><dt>Ils s’appliquent à quasiment tous les éléments.</dt><br>
+					<dd>Les attributs de gestion d’événements :</dd><dt>Ces attributs permettent de gérer les événements.</dt><br>
+				</dl>
+			</li>
+		</ul>
+		<aside>
+			<h4>Remarques :</h4>
+			<ul>
+				<li>On doit fermer toutes les balises.</li>
+				<li>Pas de chevauchement entre les balise ( La plus dernière balise ouvert est la première fermée ).</li>
+				<li>Le langage HTML ne prend pas en considération la casse.</li>
+				<li>Ce qui est compris entre &lt;!-- et --&gt; représente un commentaire en HTML.</li> 
+			</ul>
+			
+		</aside>
+		<footer>
+			<button><a href="IntroductionHTML.html">Précédent</a></button>
+			<button><a href="QUIZBasesHTML.html">QUIZ</a></button>
+			<button><a href="LesListes.html">Suivant</a></button> 
+		</footer>
+	</section>
+	<footer>
+		<p>&copy;Copyright 2018 - 2019 ROUABHA.SAHNOUNE.Master1.IL</p>
+	</footer>
+</body>
+</html>
